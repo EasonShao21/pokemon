@@ -51,7 +51,7 @@ body {
 .bg_index {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem; 
-  background-image: url("/images/stars1.jpg");
+  background-image: url("../images/stars1.jpg");
   background-size:cover;
 }
 

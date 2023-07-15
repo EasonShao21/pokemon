@@ -1,0 +1,299 @@
+html {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+}
+
+body {
+  background: #1f2937;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+.text_color_hex {
+  color: darkorange;
+}
+
+.text_color_white {
+  color: white;
+}
+
+.bg_title_text_sm {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.bg_text_lg {
+  padding: 100px 200px 0px 200px;
+}
+
+.bg_text_lg h2 {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.bg_text_lg span {
+  text-align: center;
+  display: block;
+}
+
+/* header */
+
+.header {
+  height: 700px;
+  background-position: center center;
+}
+
+.bg_index {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem; 
+  background-image: url("/images/stars1.jpg");
+  background-size:cover;
+}
+
+.reset_button {
+  float: left;
+  color: white;
+  cursor: pointer;
+  margin: 6px;
+}
+
+/* nav */
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0px 40px;
+}
+
+.title {
+  display: flex;
+  float: left;
+  height: 70px;
+}
+
+.title h3 {
+  color: white;
+  padding: 5px 5px;
+}
+
+.menu ul li {
+  float: right;
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0px 15px;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+  color: darkorange;
+  border-bottom: 5px solid darkorange;
+}
+
+.menu_bar {
+  margin: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pos_center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    -180deg,
+    #ff0017 0%,
+    #ff0017 45%,
+    #000000 45%,
+    #000000 55%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
+  border: 2px solid #000000;
+  position: relative;
+  margin: auto 0;
+}
+
+.ball_ball {
+  width: 45%;
+  height: 45%;
+  border-radius: 100%;
+  background: #000000;
+}
+
+.ball_ball_ball {
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  background: #ffffff;
+}
+
+.ball_ball_ball_ball {
+  width: 72%;
+  height: 72%;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+/* search_bar */
+
+.textbox_style {
+  width: 100%;
+  padding: 14px 0px;
+  border: 0px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.search {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.search_btn {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 0px;
+}
+
+.search_icon:hover {
+  background-color: #dddddd;
+  border-radius: 0px 5px 5px 0px;
+  transition: all 0.3s;
+}
+
+/*  */
+
+.pokemon-advance-search__type {
+  width: 10%;
+  margin: 0;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  border-radius: 1em;
+  position: relative;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+.normal_color {
+  color: #dcdcdc;
+  border-color: #dcdcdc;
+}
+
+.fire_color {
+  color: #ff6900;
+  border-color: #ff6900;
+}
+
+.water_color {
+  color: #14b9ff;
+  border-color: #14b9ff;
+}
+
+.grass_color {
+  color: #b4f000;
+  border-color: #b4f000;
+}
+
+.electric_color {
+  color: #ffe100;
+  border-color: #ffe100;
+}
+
+.ice_color {
+  color: #14f5ff;
+  border-color: #14f5ff;
+}
+
+.fighting_color {
+  color: #dc6900;
+  border-color: #dc6900;
+}
+
+.poison_color {
+  color: #d28cd2;
+  border-color: #d28cd2;
+}
+
+.ground_color {
+  color: #fac85a;
+  border-color: #fac85a;
+}
+
+.flying_color {
+  color: #fac85a;
+  border-color: #fac85a;
+}
+
+.psychic_color {
+  color: #f08cdc;
+  border-color: #f08cdc;
+}
+
+.bug_color {
+  color: #46c846;
+  border-color: #46c846;
+}
+
+.rock_color {
+  color: #b48c64;
+  border-color: #b48c64;
+}
+
+.ghost_color {
+  color: #a08cff;
+  border-color: #a08cff;
+}
+
+.dragon_color {
+  color: #5078dc;
+  border-color: #5078dc;
+}
+
+/* .pokemon_list */
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pokemon_img {
+  width: 200px
+}

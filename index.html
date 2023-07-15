@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>124563</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <title>PokémonMasterEason</title>
+  </head>
+  <style>
+    @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+  </style>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header class="header bg_index">
+          <nav class="menu clearfix">
+            <div class="title">
+              <div class="ball">
+                <div class="ball_ball pos_center">
+                  <div class="ball_ball_ball pos_center">
+                    <div class="ball_ball_ball_ball pos_center"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>PokémonMasterEason</h3>
+            </div>
+            <ul class="menu_bar">
+              <li>
+                <a href="#qa">問答</a>
+              </li>
+              <li>
+                <a href="#learn">課程</a>
+              </li>
+              <li>
+                <a href="#index" name="index">首頁</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg_text_lg">
+            <h2 class="text_color_white">一起來認識寶可夢吧！</h2>
+            <span class="bg_title_text_sm text_color_hex"
+              >使用名稱或圖鑑編號搜索</span
+            >
+            <div class="search">
+              <input @keyup.enter="search()" v-model="key_word" type="text" name="search" class="textbox_style" />
+              <div class="search_icon">
+                <button @click="search()" class="search_btn">
+                  <i class="fas fa-search fa-2x"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <pokemon-advance-type @click="filterAdvType(adv.value)" v-for="(adv, adv_index) in advances" :key="adv_index" :advance-type="advances[adv_index].name" ></pokemon-advance-type>
+            </div>
+
+            <label for="" class="reset_button" @click="reset">重置</label>
+          </div>
+        </header>
+      </div>
+      <div class="pokemon-list">
+        <div v-for="(pokemon, pokemon_index) in pokemons" :key="pokemon_index">
+          <!-- <pokemon-card v-for="(pokemon, pokemon_index) in pokemons" :key="pokemon_index" :pokemon-detail="pokemon"></pokemon-card>  -->
+          <img class="pokemon_img" :src="pokemon.img_url" alt="" >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/http-vue-loader"></script>
+<script type="module" src="./js/pokemon.js"></script>

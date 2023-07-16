@@ -158,33 +158,24 @@ const app = {
           img_url: "./images/pokemons/015.png",
           advances_type: ["bug", "poison"],
         },
-        // {
-        //     no: 16,
-        //     name: '波波',
-        //     img_url: './images/pokemons/016.png',
-        //     advances_type: [
-        //         'normal',
-        //         'flying'
-        //     ]
-        // },
-        // {
-        //     no: 17,
-        //     name: '比比鳥',
-        //     img_url: './images/pokemons/017.png',
-        //     advances_type: [
-        //         'normal',
-        //         'flying'
-        //     ]
-        // },
-        // {
-        //     no: 18,
-        //     name: '大比鳥',
-        //     img_url: './images/pokemons/018.png',
-        //     advances_type: [
-        //         'normal',
-        //         'flying'
-        //     ]
-        // },
+        {
+          no: 16,
+          name: "波波",
+          img_url: "./images/pokemons/016.png",
+          advances_type: ["normal", "flying"],
+        },
+        {
+          no: 17,
+          name: "比比鳥",
+          img_url: "./images/pokemons/017.png",
+          advances_type: ["normal", "flying"],
+        },
+        {
+          no: 18,
+          name: "大比鳥",
+          img_url: "./images/pokemons/018.png",
+          advances_type: ["normal", "flying"],
+        },
         {
           no: 19,
           name: "小拉達",
@@ -683,13 +674,321 @@ const app = {
           img_url: "./images/pokemons/101.png",
           advances_type: ["electric"],
         },
+        {
+          no: 102,
+          name: "蛋蛋",
+          img_url: "./images/pokemons/102.png",
+          advances_type: ["grass", "psychic"],
+        },
+        {
+          no: 103,
+          name: "椰蛋樹",
+          img_url: "./images/pokemons/103.png",
+          advances_type: ["grass", "psychic"],
+        },
+        {
+          no: 104,
+          name: "卡拉卡拉",
+          img_url: "./images/pokemons/104.png",
+          advances_type: ["ground"],
+        },
+        {
+          no: 105,
+          name: "嘎拉嘎拉",
+          img_url: "./images/pokemons/105.png",
+          advances_type: ["ground"],
+        },
+        {
+          no: 106,
+          name: "飛腿郎",
+          img_url: "./images/pokemons/106.png",
+          advances_type: ["fighting"],
+        },
+        {
+          no: 107,
+          name: "快拳郎",
+          img_url: "./images/pokemons/107.png",
+          advances_type: ["fighting"],
+        },
+        {
+          no: 108,
+          name: "大舌頭",
+          img_url: "./images/pokemons/108.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 109,
+          name: "瓦斯彈",
+          img_url: "./images/pokemons/109.png",
+          advances_type: ["poison"],
+        },
+        {
+          no: 110,
+          name: "雙彈瓦斯",
+          img_url: "./images/pokemons/110.png",
+          advances_type: ["poison"],
+        },
+        {
+          no: 111,
+          name: "獨角犀牛",
+          img_url: "./images/pokemons/111.png",
+          advances_type: ["ground", "rock"],
+        },
+        {
+          no: 112,
+          name: "鑽角犀獸",
+          img_url: "./images/pokemons/112.png",
+          advances_type: ["ground", "rock"],
+        },
+        {
+          no: 113,
+          name: "吉利蛋",
+          img_url: "./images/pokemons/113.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 114,
+          name: "蔓藤怪",
+          img_url: "./images/pokemons/114.png",
+          advances_type: ["grass"],
+        },
+        {
+          no: 115,
+          name: "袋獸",
+          img_url: "./images/pokemons/115.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 116,
+          name: "墨海馬",
+          img_url: "./images/pokemons/116.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 117,
+          name: "海刺龍",
+          img_url: "./images/pokemons/117.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 118,
+          name: "角金魚",
+          img_url: "./images/pokemons/118.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 119,
+          name: "金魚王",
+          img_url: "./images/pokemons/119.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 120,
+          name: "海星星",
+          img_url: "./images/pokemons/120.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 121,
+          name: "寶石海星",
+          img_url: "./images/pokemons/121.png",
+          advances_type: ["water", "psychic"],
+        },
+        {
+          no: 122,
+          name: "魔牆人偶",
+          img_url: "./images/pokemons/122.png",
+          advances_type: ["psychic"],
+        },
+        {
+          no: 123,
+          name: "飛天螳螂",
+          img_url: "./images/pokemons/123.png",
+          advances_type: ["bug", "flying"],
+        },
+        {
+          no: 124,
+          name: "迷唇姐",
+          img_url: "./images/pokemons/124.png",
+          advances_type: ["ice", "psychic"],
+        },
+        {
+          no: 125,
+          name: "電擊獸",
+          img_url: "./images/pokemons/125.png",
+          advances_type: ["electric"],
+        },
+        {
+          no: 126,
+          name: "鴨嘴火獸",
+          img_url: "./images/pokemons/126.png",
+          advances_type: ["fire"],
+        },
+        {
+          no: 127,
+          name: "凱羅斯",
+          img_url: "./images/pokemons/127.png",
+          advances_type: ["bug"],
+        },
+        {
+          no: 128,
+          name: "肯泰羅",
+          img_url: "./images/pokemons/128.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 129,
+          name: "鯉魚王",
+          img_url: "./images/pokemons/129.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 130,
+          name: "暴鯉龍",
+          img_url: "./images/pokemons/130.png",
+          advances_type: ["water", "flying"],
+        },
+        {
+          no: 131,
+          name: "拉普拉斯",
+          img_url: "./images/pokemons/131.png",
+          advances_type: ["water", "ice"],
+        },
+        {
+          no: 132,
+          name: "百變怪",
+          img_url: "./images/pokemons/132.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 133,
+          name: "伊布",
+          img_url: "./images/pokemons/133.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 134,
+          name: "水伊布",
+          img_url: "./images/pokemons/134.png",
+          advances_type: ["water"],
+        },
+        {
+          no: 135,
+          name: "雷伊布",
+          img_url: "./images/pokemons/135.png",
+          advances_type: ["electric"],
+        },
+        {
+          no: 136,
+          name: "火伊布",
+          img_url: "./images/pokemons/136.png",
+          advances_type: ["fire"],
+        },
+        {
+          no: 137,
+          name: "多邊獸",
+          img_url: "./images/pokemons/137.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 138,
+          name: "菊石獸",
+          img_url: "./images/pokemons/138.png",
+          advances_type: ["rock", "water"],
+        },
+        {
+          no: 139,
+          name: "多刺菊石獸",
+          img_url: "./images/pokemons/139.png",
+          advances_type: ["rock", "water"],
+        },
+        {
+          no: 140,
+          name: "化石盔",
+          img_url: "./images/pokemons/140.png",
+          advances_type: ["rock", "water"],
+        },
+        {
+          no: 141,
+          name: "鐮刀盔",
+          img_url: "./images/pokemons/141.png",
+          advances_type: ["rock", "water"],
+        },
+        {
+          no: 142,
+          name: "化石翼龍",
+          img_url: "./images/pokemons/142.png",
+          advances_type: ["rock", "flying"],
+        },
+        {
+          no: 143,
+          name: "卡比獸",
+          img_url: "./images/pokemons/143.png",
+          advances_type: ["normal"],
+        },
+        {
+          no: 144,
+          name: "極凍鳥",
+          img_url: "./images/pokemons/144.png",
+          advances_type: ["ice", "flying"],
+        },
+        {
+          no: 145,
+          name: "閃電鳥",
+          img_url: "./images/pokemons/145.png",
+          advances_type: ["electric", "flying"],
+        },
+        {
+          no: 146,
+          name: "火焰鳥",
+          img_url: "./images/pokemons/146.png",
+          advances_type: ["fire", "flying"],
+        },
+        {
+          no: 147,
+          name: "迷你龍",
+          img_url: "./images/pokemons/147.png",
+          advances_type: ["dragon", "flying"],
+        },
+        {
+          no: 148,
+          name: "哈克龍",
+          img_url: "./images/pokemons/148.png",
+          advances_type: ["dragon", "flying"],
+        },
+        {
+          no: 149,
+          name: "快龍",
+          img_url: "./images/pokemons/149.png",
+          advances_type: ["dragon", "flying"],
+        },
+        {
+          no: 150,
+          name: "超夢",
+          img_url: "./images/pokemons/150.png",
+          advances_type: ["psychic"],
+        },
+        {
+          no: 151,
+          name: "夢幻",
+          img_url: "./images/pokemons/151.png",
+          advances_type: ["psychic"],
+        },
       ],
       pokemons_original: [],
+      selected_pokemon: {
+        no: 1,
+        name: "妙蛙種子",
+        img_url: "./images/pokemons/001.png",
+        advances_type: ["grass", "poison"],
+      },
+      random_time: true,
+      answer: false,
     };
   },
   components: {
     pokemonAdvanceType,
-    pokemonCard
+    pokemonCard,
   },
   mounted() {
     this.pokemons_original = JSON.parse(JSON.stringify(this.pokemons));
@@ -717,6 +1016,25 @@ const app = {
           return pokemon.name.match(this.key_word);
         }
       });
+    },
+    randomItem() {
+      return this.pokemons_original[
+        Math.floor(Math.random() * this.pokemons_original.length)
+      ];
+    },
+    created() {
+      this.answer = false;
+      this.random_time = true;
+      let randomStart = setInterval(() => {
+        this.selected_pokemon = this.randomItem();
+      }, 500);
+      setTimeout(() => {
+        clearInterval(randomStart);
+        this.random_time = false;
+      }, 2000);
+    },
+    openAnwer() {
+      this.random_time == false ? (this.answer = true) : (this.answer = false);
     },
   },
 };

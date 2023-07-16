@@ -17,10 +17,10 @@
   </style>
   <body>
     <div id="app">
-      <div class="container">
+      <div id="pege1" class="container">
         <header class="header bg_index">
           <nav class="menu clearfix">
-            <div class="title">
+            <div class="name">
               <div class="ball">
                 <div class="ball_ball pos_center">
                   <div class="ball_ball_ball pos_center">
@@ -32,13 +32,10 @@
             </div>
             <ul class="menu_bar">
               <li>
-                <a href="#qa">問答</a>
+                <a href="#pege2">我是誰</a>
               </li>
               <li>
-                <a href="#learn">課程</a>
-              </li>
-              <li>
-                <a href="#index" name="index">首頁</a>
+                <a href="#pege1" name="index">首頁</a>
               </li>
             </ul>
           </nav>
@@ -48,7 +45,13 @@
               >使用名稱或圖鑑編號搜索</span
             >
             <div class="search">
-              <input @keyup.enter="search()" v-model="key_word" type="text" name="search" class="textbox_style" />
+              <input
+                @keyup.enter="search()"
+                v-model="key_word"
+                type="text"
+                name="search"
+                class="textbox_style"
+              />
               <div class="search_icon">
                 <button @click="search()" class="search_btn">
                   <i class="fas fa-search fa-2x"></i>
@@ -56,18 +59,31 @@
               </div>
             </div>
             <div>
-              <pokemon-advance-type @click="filterAdvType(adv.value)" v-for="(adv, adv_index) in advances" :key="adv_index" :advance-type="advances[adv_index].name" ></pokemon-advance-type>
+              <pokemon-advance-type
+                @click="filterAdvType(adv.value)"
+                v-for="(adv, adv_index) in advances"
+                :key="adv_index"
+                :advance-type="advances[adv_index].name"
+              ></pokemon-advance-type>
             </div>
 
             <label for="" class="reset_button" @click="reset">重置</label>
           </div>
         </header>
       </div>
-      <div class="pokemon-list">
-        <div v-for="(pokemon, pokemon_index) in pokemons" :key="pokemon_index">
-          <!-- <pokemon-card v-for="(pokemon, pokemon_index) in pokemons" :key="pokemon_index" :pokemon-detail="pokemon"></pokemon-card>  -->
-          <img class="pokemon_img" :src="pokemon.img_url" alt="" >
-        </div>
+      <div class="pokemon_list">
+        <pokemon-card v-for="(pokemon, pokemon_index) in pokemons" :key="pokemon_index" :pokemon-detail="pokemon"></pokemon-card> 
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div id="pege2" class="title">
+        <h2>
+          我是誰？
+        </h2>
+      </div>
+      <div class="pokemon_guess">
+        <input @click="created" type="button" value="出題">
+        <img :style="answer? {'filter': 'brightness(100%)'} : {'filter': 'brightness(0)'}" @click="openAnwer" :src="selected_pokemon.img_url" alt="" />
+        <h3 v-if="answer">{{ selected_pokemon.name }}</h3>
       </div>
     </div>
   </body>

@@ -60,7 +60,7 @@ body {
 /* header */
 
 .header {
-  height: 700px;
+  height: 80vh;
   background-position: center center;
 }
 
@@ -543,13 +543,16 @@ body {
 }
 
 .pokemon_guess img {
+  height: 200px;
+  width: 200px;
   display: block;
-  margin: 40px auto;
+  margin: 20px auto 0px;
   transition: 0.6s;
   filter: brightness(0);
 }
 
 .pokemon_guess h3 {
+  margin-top: 0;
   color: white
 }
 
